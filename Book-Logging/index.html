@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Log</title>
+    <link rel="shortcut icon" href="img/book.png" />
+    <!-- Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Fontawesome -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header id="header">
+      <nav class="nav-extended">
+        <div class="nav-wrapper">
+          <a id="brand-name" href="#" class="brand-logo left"
+            ><img
+              id="logo"
+              class="responsive-img"
+              src="img/bookshelf.png"
+              alt="Book Logo"
+              height="60px"
+              width="75px"
+            /> Literarium
+          </a>
+          <form id="searchform" class="right secondary-content">
+            <div class="input-field">
+              <input id="search" style="min-height: 60px;" type="search" required>
+              <label class="label-icon" for="search"><i class="material-icons" style="font-size: 40px;">search</i></label>
+              <i class="material-icons" style="font-size: 40px;">close</i>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <br />
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <div id="main" class="card">
+              <div class="card-content hoverable">
+                <span class="card-title center">Add a Book</span>
+                <div id="parent" class="row">
+                  <form id="book-form">
+                    <!-- Title -->
+                    <div class="input-field col s12">
+                      <input type="text" id="title" />
+                      <label for="title">Title</label>
+                    </div>
+
+                    <!-- Author -->
+                    <div class="input-field col s12">
+                      <input type="text" id="author" />
+                      <label for="author">Author</label>
+                    </div>
+
+                    <!-- Genre -->
+                    <div class="input-field col s12">
+                      <input type="text" id="genre" />
+                      <label for="genre">Genre</label>
+                    </div>
+                    <br><br>
+
+
+                    <!-- Book Type -->
+                    <div class="input-field col s12">
+                      <select id="book-type">
+                        <option id='blank-value' value="Blank" disable selected> </option>
+                        <option value="Paperback">Paperback</option>
+                        <option value="Hardcover">Hardcover</option>
+                        <option value="E-Book">E-Book</option>
+                      </select>
+                      <label for="book-type">Book Type</label>
+                    </div>
+
+                    <div class="center">
+                      <button class="btn center z-depth-4 waves-effect waves-light" id="submit-book" type = "submit">Add My Book</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <table class="col s-12 striped centered">
+          <h4 class="center"><strong>My Books</strong></h4>
+          <br>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Genre</th>
+              <th>Book Type</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id = "book-list">
+
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <br><br>
+    
+    <footer id="footer" class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col 16 s12 center">
+            <strong
+              ><i class="fa fa-code"> </i> with <i class="fa fa-heart"> </i> by
+              Raksha Pawar</strong
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JQuery Dependency for Materialize-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- App JS file -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

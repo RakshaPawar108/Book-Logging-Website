@@ -1,0 +1,127 @@
+nav {
+
+  min-height: 100px;
+  /* background-color: #9575cd; */
+}
+
+#logo {
+
+  padding-top : 20px;
+  /* padding-bottom: 20px; */
+  padding-left: 10px;
+}
+
+#brand-name {
+
+  color: #ffffff;
+}
+
+#strongtext {
+
+  margin-bottom: 500px;
+}
+
+#brand {
+
+  padding-bottom: 50px;
+  /* mar */
+}
+
+#searchform {
+
+  margin-top: 30px;
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+/* Body */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+
+/* Form card */
+/* .card {
+  display: none;
+} */
+
+#submit-book {
+  color: white;
+  background-color: #e91e63;
+}
+
+/* Alerts */
+.success, .error, .deletedBook {
+  
+  min-height: 30px;
+  font-size: 16px;
+  padding: 5px;
+  margin: 5px 0 15px 0;
+}
+
+.success {
+
+  color: black;
+  background: #00e676;
+  
+}
+
+.error {
+
+  color: black;
+  background: #ff5252;
+}
+
+.deletedBook {
+
+  color: black;
+  background: #4dd0e1;
+}
+
+
+/* Table */
+.striped {
+
+  background: #ec407a;
+}
+
+thead {
+
+  font-size: 16px;
+  border-bottom: 5px solid black;
+}
+
+tbody {
+
+  font-size: 16px;
+}
+
+.fa-remove {
+
+  font-size: 20px;
+  margin-right: 15px;
+  color: #ffeb3b;
+}
+
+/* Footer */
+
+#footer {
+
+  /* background-color: #9575cd; */
+  color: white;
+  font-size: 15px;
+}
+.fa-code {
+  margin-right: 5px;
+}
+
+.fa-heart {
+  margin-right: 5px;
+  margin-left: 5px;
+}
